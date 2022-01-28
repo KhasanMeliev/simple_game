@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+</head>
+<body>
+    <div class="container">
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="register">
+        <form onsubmit="return false">
+          <div class="inputs">
+            <label>Name</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter your name..."
+              required
+              minlength="2"
+            />
+            <label>Surname</label>
+            <input
+              type="text"
+              id="surname"
+              placeholder="Enter your surname..."
+              required
+              minlength="4"
+            />
+
+         
+          </div>
+          <div class="button">
+            <button onclick="register()">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <button onclick="change()" id="changebtn">change</button>
+    <div class="container2">
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="profile">
+          <div id="output_picture">
+        
+          </div>
+          <div class="texts">
+              <p id="output_name"></p>
+              <p id="output_surname"></p>
+          </div>
+        
+          <div id="lvl" style="display:none;">
+                <p>Level <span id="level"></span></p>
+                <p id="xp">0 <span>xp</span></p>
+              </div>
+      </div>
+    </div>
+    <div id="game" style="display:none">
+      <input type="number" id="num1">
+        <button>+</button>
+        <input type="number" id="num2">
+        <button>=</button>
+        <input type="number" id="solution">
+        <button onclick="submit()">submit</button>
+        <p id="output"></p>
+        
+    </div><p id="output2" style="text-align: center; color: white; font-size: 30px;"></p>
+  </body>
+  <script src="script.js"></script>
+</html>

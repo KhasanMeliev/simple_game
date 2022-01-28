@@ -1,0 +1,109 @@
+body {
+  background-color: #080710;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 100vh;
+  font-family: cursive;
+  flex-wrap: wrap;
+}
+.container,.container2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.container2{
+  display: none;
+}
+.shape {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: absolute;
+  margin-left: -270px;
+  margin-top: -200px;
+}
+.shape:first-child {
+  background: linear-gradient(to right, #ff512f, #f09819);
+}
+.shape:nth-child(2) {
+  background: linear-gradient(to right, #ff512f, #f09819);
+  margin-left: 200px;
+  margin-top: 300px;
+}
+.register,.profile {
+  height: 520px;
+  width: 400px;
+  background-color: rgba(255, 255, 255, 0.13);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  backdrop-filter: blur(10px);
+  margin: 30px;
+}
+#output_picture {
+  width: 140px;
+  height: 140px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://i.scdn.co/image/ab6761610000e5eba91af711541f8807ed7f0676");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.inputs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+label {
+  color: white;
+}
+input {
+  width: 200px;
+  height: 30px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.13);
+  margin: 10px;
+  text-align: center;
+  border: none;
+  outline: none;
+  font-family: cursive;
+}
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+button {
+  width: 140px;
+  height: 35px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.13);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.texts,.country{
+    display: flex;
+}
+.texts p{
+    color: white;
+    margin: 5px;   
+    font-size: 30px;
+}
+.profile{
+    height: 360px;
+  width: 350px;
+}
+#lvl p{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
